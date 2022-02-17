@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<title> forgot password </title>
+
+	<style>
+		body {font-family: Dubai;  color: #0F4C81; padding: 36px; }
+		form {border: 1px solid #ccc; padding: 67px}
+
+		input[type=text] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+
+		button {
+			background-color: #7BC4C4;
+			color: white;
+			padding: 14px 20px;
+			margin: 17px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			border-radius: 25px;
+
+		}
+
+		button:hover {
+			opacity: 0.8;
+		}
+
+		.container {
+			padding: 50px;
+		}
+
+		form h2{color: #0F4C81;}
+		form h4{color: #7BC4C4; }
+
+
+
+	</style>
+</head>
+
+
+
+
+<body>
+
+	
+
+     <!-- check action attr -->
+	<form action="action_page.php" method="get">
+
+		<h2>Reset Your Password</h2>
+		<br>
+
+		<h4>Reset password via:</h4>
+
+		<input type="radio" id="email" name="methodchoice" value="Email">
+		<label for="email">Email</label><br>
+		<input type="radio" id="phone" name="methodchoice" value="Phone Number">
+		<label for="phone">Phone number </label><br>
+
+		
+
+		<div class="container">
+			<label for="method"><b>Email / Phone number</b></label>
+			<input type="text" placeholder="Enter your Email / Phone number" name="Email / Phone number" required>
+
+			<button type="submit">Reset Password</button>
+
+		</div>
+
+	</form>
+</body>
+
+
+
+
+
+
+
+</html>
