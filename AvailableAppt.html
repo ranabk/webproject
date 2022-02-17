@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Appointments</title>
+        <style >
+            body{
+                background-image: url(petdoc.jpeg);
+                background-position: right;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size:auto;
+                background-position-y: 240px;
+                background-size: 310px;       
+            }
+            .headerbar{
+              width: 90%  ;
+              margin: auto;
+              padding: 36px 0;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
+            .logo{
+              width: 100px;
+              height: 100px;
+              
+            }
+            .headerbar ul li{
+              list-style: none;
+              display: inline-block;
+              margin: 0 15px;
+              position: relative;
+    
+    
+            }
+            .headerbar ul li a{
+              text-decoration:  none;
+              color: grey;  
+              position:relative;
+    
+            }
+            .headerbar ul li::after {
+              content: '';
+              height: 3px;
+              width: 100% ;
+              background: #009688;
+              position: absolute;
+              left: 0;
+              bottom: -10px;
+              transition: 0.5s;
+            }
+            .headerbar ul li a:hover{
+              color: black;
+              transition: 0.2s;
+            }
+            .menu-rana{
+            width: 90%  ;
+              margin: 0;
+              padding: 0;
+              border: 0ch;
+              padding: 36px 0;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+           }
+           
+            .menu-rana ul li{
+              list-style: none;
+              align-items: center;
+              display: inline-block;
+              margin: 0 15px;
+              position:relative;
+            }
+            .menu-rana ul li a{
+                text-decoration:  none;
+              color: grey;  
+              position:relative;
+            }
+            .menu-rana li a:hover{
+                color: black;
+              transition: 0.2s;
+               border-bottom: 2px solid #009688;
+            }
+    
+            .newappt, #req , .prev {
+                text-align:right;
+                width: 50%;
+                position: relative;
+                border-style: solid;
+                border-radius: 25px;
+                border-width: 2px;
+                padding: 20px;
+                border-color:rgb(163, 162, 162);
+                justify-content: space-between; 
+                box-shadow: 5px 5px rgb(218, 216, 216);
+            }
+            
+            .newappt ul li , .newappt2 ul li{
+                list-style: none;
+                display: inline-block;
+                margin: 0 7px;
+            }
+            .status {
+                text-align:center;
+                width: 20%;
+                margin-left: 80%;
+                position: relative;
+                border-style: solid;
+                border-radius: 25px;
+                border-width: 2px;
+                padding: 2px;
+              
+            }
+    
+          </style>
+    </head>
+    <body>
+        <div class="headerbar">
+            <img src="Templogo.jpeg" class="logo">
+            <ul>
+              <li> <a href="#"> ABOUT US </a> </li>
+              <li><a href="#"> CONTACT US </a></li>
+            </ul>
+         </div> 
+        
+         <div class="menu-rana" >
+            <ul >
+                <li><a href="#MyAppointments"> My Appointments</a></li>
+                <li><a href="#UpcomingAppointments"> Upcoming Appointments</a></li>
+                <li><a href="#previousAppointments"> Previous Appointments</a></li>
+            </ul>
+        </div>
+    
+        <hr style= " position: relative; margin-top: 0px; top: -30px; bottom: -10;">
+        
+        <h1 id="MyAppointments" style="color:#009688 ; "> <em>My Appointments</em> </h1>
+     
+        
+        <div class="newappt" >
+            <ul>
+                <li> <button onclick="", style=" width: 70px;height: 25px;"> Edit </button></li>
+                <li> <a href="#" ><img src="delete.jpeg" width="20" height="20" 
+                    alt="delete"></li> </a>
+            </ul>  
+        </div>
+        <br>
+    
+        <div class="newappt">
+            <ul>
+                <li> <button onclick="", style=" width: 70px; height: 25px;"> Edit </button></li>
+                <li> <a href="#" ><img src="delete.jpeg" width="20" height="20" 
+                    alt="delete"></li></a>
+            </ul>  
+        </div>
+    
+        <br>
+    
+        <h1 id="UpcomingAppointments" style="color:#009688; "><em> Upcoming Appointments</em></h1>
+        
+        <div id="req" >
+             <div class="status" style="  border-color: gray; 
+             background-color: gray;">
+                 Pending
+             </div>
+        </div>
+        <br>
+        <div id="req" >
+            <div class="status" style="border-color: red; background-color: red;">
+                Denied
+            </div>
+       </div>
+        
+        <h1 id="requestedAppointments" style="color:#009688;"><em>Previous Appointments</em></h1>
+        <div class="prev"> 
+           <ul>
+           <p></p>
+           <p> <img src="star.png" width="30" height="30"
+            alt="empty star">
+            <img src="star.png" width="30" height="30"
+            alt="empty star">
+            <img src="star.png" width="30" height="30"
+            alt="wmpty star"></p>
+        </ul>
+       </div>
+    </body>
+</html>
