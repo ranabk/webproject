@@ -1,0 +1,123 @@
+:root{
+    font-size: 16px;
+}
+body{
+    margin-left: 1em;
+    overflow: scroll;
+    font-family: 'Poppins' , sans-serif;
+    width: 100%;
+	height: 100vh;
+    background-image: url(pics/dogbg2.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-attachment: fixed;
+    background-size:350px ;
+
+}
+h1{
+    font-size: 3rem;
+    color: navy;
+    margin-left: 0.5em;
+}
+
+.container{
+    margin: 1em;
+    position: relative;
+    margin-left: 1 em;
+    
+}
+#myborder1{
+    position: absolute;
+    border-width: 0.55em;
+    border-radius: 2em;
+    border-color: lightsteelblue;
+    border-style: solid;
+   width: 44em;
+   
+}
+
+.class-pet{
+font-size: 1.5rem;
+margin-left: 1em;
+margin-right: 1em;
+margin-top: 0.75em;
+margin-bottom: 1.5em;
+
+}
+
+
+select {
+    margin-left: 1em;
+    background-color: #e6f3fd;
+    color: rgb(94, 112, 128);
+    padding: 12px;
+    width: 180px;
+    border: none;
+    font-size: 1.25rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    
+  }
+ 
+  select option {
+    padding: 30px;
+    
+  }
+
+
+
+
+.class-service{
+    font-size: 1.5rem;
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+    margin-right: 1em;
+    }
+
+.class-date{
+    font-size: 1.5rem;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1.5em;
+}
+
+.class-time{
+    font-size: 1.5rem;
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+    margin-right: 1em;
+}
+
+.class-notes{
+    font-size: 1.5rem;
+    margin-left: 1em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    
+}
+
+
+button{
+	color: #395570 ;
+    font-size: 1.25rem;
+	padding: 10px 70px;
+	background: transparent;
+	border: 0.175em solid lightsteelblue;
+	border-radius: 3em;
+	outline: none;
+	cursor: pointer;
+	margin-left: 4em;
+    margin-bottom: 3em;
+    
+}
+button:hover{
+    background-color: rgb(232, 239, 247);
+}
+textarea{
+    background-color: #ebf3fa;
+    color: rgb(94, 112, 128);
+    border: none;
+    font-size: 1.25rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
