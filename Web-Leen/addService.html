@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>Add Service</title>
+  <style type="text/css">
+    
+   body {font-family: Dubai; color: #5A5B9F; padding: 0px;}
+
+   .headerbar{
+            width: 90%  ;
+            margin: auto;
+            padding: 36px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .logo{
+            width: 100px;
+            
+          }
+          .headerbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 15px;
+            position: relative;
+            
+          }
+          .headerbar ul li a{
+            text-decoration:  none;
+            color: grey;  
+            position:relative;
+            
+  
+          }
+          .headerbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 100% ;
+            background: #009688;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+            text-decoration: none;
+          }
+              .headerbar ul li a:hover{
+            color: black;
+            transition: 0.2s;
+            padding: 0px;
+       } 
+       ul li ul.dropdown {
+          position: relative;
+          min-width: 120%; 
+          text-decoration: none;
+          display: none;
+          position: absolute;
+          z-index: 999;
+          left: 0;
+          padding: 0px; 
+      }
+      ul li:hover ul.dropdown {
+          display: block; /* Display the dropdown */
+          left: 0px;
+           padding: 0px ;
+       }
+  
+            body{font-family: 'Poppins' , sans-serif;}
+  
+            .headbar ul li.dropdown{
+              display: block;
+            }
+
+      .dropdown{
+        text-decoration: none;
+      }
+     
+          
+
+   .imgcontainer {
+     text-align: center;
+     margin: 24px 0 12px 0;
+     position: relative;
+   }
+
+   img.avatar {
+     width: 17%;
+     border-radius: 50%;
+   }
+
+   input[type=petN], input[type=text] {
+     width: 100%;
+     padding: 15px;
+     margin: 5px 0 22px 0;
+     display: inline-block;
+     border: 1px solid #7BC4C4;
+     background: #f1f1f1;
+   }
+
+   input[type=petN]:focus, input[type=text]:focus {
+     background-color: #ddd;
+     outline: none;
+   }
+
+   hr {
+     border: 1px solid #f1f1f1;
+     margin-bottom: 25px;
+   }
+
+   /*button {
+     background-color:  #7BC4C4;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+     opacity: 0.9;
+     border-radius: 22px;
+
+
+   }*/
+
+   .AddSer span  { 
+
+    background-color: #7BC4C4;
+    color: white;
+    padding: 13px 600px;
+    margin: 50px 100px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 22px;
+     }
+
+   /*button:hover {
+     opacity:1;
+   }*/
+
+
+
+   .container {
+     padding: 67px;
+     margin: 36px;
+   }
+
+   .container h1{ color: #0F4C81 ; }
+   .container p { color: #7BC4C4 ; }
+
+   a { text-decoration: none; }
+
+   span:hover { color: #f44336; text-decoration: underline;}
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <div class="headerbar">
+    <img src= "pics-leen/Templogo.jpeg" class="logo">
+    <ul>
+      <li> <a href="#"> HOME  </a> </li>
+      <li> <a href="#"> ABOUT US </a> </li>
+      <li><a href="#"> CONTACT US </a></li>
+      <li>    <a href="#"  ><img src = "pics-leen/more.jpeg" width = "30" height = "10" alt = "menu"> </a>
+        <ul class="dropdown">
+            <li><a href="#">Manage Profile</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </ul>
+</li>
+</ul>
+  </div>
+
+<!-- check action attr -->
+<!--<form action="services.html" method="post" style="border:10px solid #5A5B9F; margin: 67px;">-->
+  <form action="#" method="post" style="border:10px solid #5A5B9F; margin: 67px;">
+    <div class="container">
+      <h1>Add Service</h1>
+      <h2>Please fill in this form to Add a Service.</h2>
+      <hr>
+
+      <div >
+        
+      </div>
+
+      <label for="Sname"><b>Service name</b></label>
+      <input type="text" placeholder="Enter Service's name" name="Sname" required>
+
+
+
+      <label for="name"><b>Service description</b></label>
+      <input type="text" placeholder="Add Service's description" name="disc" required>
+
+       <label for="name"><b>Price</b></label>
+      <input type="text" placeholder="Add Service's price" name="Price" required>
+      <br><br>
+
+
+    
+
+       <a class="AddSer" href="Services.html"> <span class="submit">  Add Service </span> </a> 
+      
+      <!--<div class="clearfix">
+        <button type="submit" class="Addbtn">Add Service</button>-->
+      </div>
+    </div>
+  </form>
+
+
+</body>
+</html>
