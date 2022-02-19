@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Log in</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <style>
+    body {font-family: dubai; }
+    form {border: 100px solid #f1f1f1;} 
+    
+
+    .container {
+      padding: 50px;
+      color: #0F4C81;
+    }
+
+
+    input[type=email], input[type=password] {
+      width: 100%;
+      padding: 13px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #7BC4C4;
+      box-sizing: border-box;
+    }
+
+    input[type=email]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none; 
+    }
+
+    button {
+      background-color: #7BC4C4;
+      color: white;
+      padding: 13px 20px;
+      margin: 7px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 22px;
+
+    }
+
+    button:hover {
+      opacity: 0.7;
+    }
+
+/*   before
+    .cancelbtn {
+      width: auto;
+      padding: 10px 17px;
+      background-color: #f44336;
+      border-radius: 20px;
+    }*/
+
+    a { text-decoration: none; }
+
+    span:hover { color: #f44336; text-decoration: underline;}
+
+    /*only html css*/
+     .login span  { 
+
+    background-color: #7BC4C4;
+    color: white;
+    padding: 13px 500px;
+    margin: 50px 0px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 22px; }
+
+    .cancelbtn span {
+     text-decoration: none;
+     color: #fff ;
+     float: right;
+     text-align: center;
+      width: 10%;
+      margin: 5px 2px ;
+      border-radius: 22px;
+      padding: 10px 20px;
+      background-color: #f44336;
+
+    }
+
+  </style>
+</head>
+
+
+
+<body>
+
+<!-- check action attr , method post for the senstive data (submitted form data is not shown in the URL) -->
+  <form action="/main2.html" method="post">
+
+
+    <div class="container">
+     <h2>Login </h2>
+     <br>
+     <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" required="">
+     <br>
+     <label for="psw"><b>Password</b></label>
+     <input type="password" placeholder="Enter Password" name="psw" required>
+
+     <br> <br>
+
+<!--      <button type="submit">Login</button> -->
+      <a class="login" href="managersHomePage.html"> <span class="submit">  login </span> </a> 
+
+
+
+    <br>
+    <br>
+     <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container"  style="background-color:#f1f1f1">
+    <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+    <a class="cancelbtn" href="main2SHAHAD.html"> <span class="cancelbtn">  Cancel </span> </a> 
+    <p> forgot password? <a href="forgetPassSHAHAD.html"><span>reset </span> </a> </p>
+    
+  </div>
+
+</form>
+
+</body>
+</html>
