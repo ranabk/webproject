@@ -86,3 +86,39 @@ margin-bottom: 1.5em;
             padding: 10px 10px;
             text-decoration: none;
 }
+
+footer {
+          text-align: center;
+          font-family: serif;
+          padding: 10px;
+          background-color: #D9CBB9;
+
+/*background-color: #fff;          
+*/color: white;
+/*
+          border-top-left-radius: 100px;
+          border-top-right-radius: 100px;*/
+          margin-top: 500px;
+        }
+        
+/*        .footerContent{
+            font-family: Open sans;
+           
+            align-items: center;
+            justify-content: center;
+        }*/
+
+        h2{
+            margin: 17px 20px;
+            color: #0F4C81 ;
+        }
+
+        .footerContent p{
+            color: #0F4C81 ;
+        }
+        .ABOUTUS{
+              color: #0F4C81 ;
+        }
+
+        .sm{ width: 170px; }
+
