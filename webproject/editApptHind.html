@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html> 
+
+<head> 
+<meta charset="utf-8">
+<title> Edit An Appointment </title>
+
+<!--font-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="editApptHind.css">
+<link rel="stylesheet" type="text/css" href="headerHind.css">
+<style >
+  .headerbar{
+            width: 90%  ;
+            margin: auto;
+            padding: 36px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .logo{
+            width: 100px;
+            
+          }
+          .headerbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 15px;
+            position: relative;
+            
+          }
+          .headerbar ul li a{
+            text-decoration:  none;
+            color: grey;  
+            position:relative;
+            
+  
+          }
+          .headerbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 100% ;
+            background: #009688;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+            text-decoration: none;
+          }
+              .headerbar ul li a:hover{
+            color: black;
+            transition: 0.2s;
+            padding: 0px;
+       } 
+       ul li ul.dropdown {
+          position: relative;
+          min-width: 120%; 
+          text-decoration: none;
+          display: none;
+          position: absolute;
+          z-index: 999;
+          left: 0;
+          padding: 0px; 
+      }
+      ul li:hover ul.dropdown {
+          display: block; /* Display the dropdown */
+          left: 0px;
+           padding: 0px ;
+       }
+  
+            body{font-family: 'Poppins' , sans-serif;}
+  
+            .headbar ul li.dropdown{
+              display: block;
+            }
+
+      .dropdown{
+        text-decoration: none;
+      }
+
+
+       footer {
+          text-align: center;
+          font-family: serif;
+          padding: 3px;
+          background-color: #D9CBB9;
+          color: white;
+          /*border-top-left-radius: 100px;
+          border-top-right-radius: 100px;*/
+        }
+        
+/*        .footerContent{
+            font-family: Open sans;
+           
+            align-items: center;
+            justify-content: center;
+        }*/
+
+        #Contact{
+            margin: 17px 20px;
+            color: #0F4C81 ;
+        }
+
+        .footerContent p{
+            color: #0F4C81 ;
+        }
+
+        .sm{ width: 170px; }
+          
+          </style>
+    <!--header style-->
+           
+</head>
+
+<body> 
+  <div class="headerbar">
+    <img src= "pics-hind/Templogo.jpeg" class="logo">
+    <ul>
+      <li> <a href="homepage.html"> HOME  </a> </li>
+      <li> <a href="AboutUsPageRana.html"> ABOUT US </a> </li>
+      <li><a href="#contact us"> CONTACT US </a></li>
+      <li>    <a href="#" ><img src = "pics-hind/menuIcon.jpg" width = "30" height = "10" alt = "menu"> </a>
+        <ul class="dropdown">
+            <li><a href="manageprofilepage.html">Manage Profile</a></li>
+            <li><a href="main2SHAHAD.html">Logout</a></li>
+        </ul>
+    </ul>
+</li>
+</ul>
+  </div>
+<h1> EDIT APPOINTMENT DETAILS </h1>
+<hr> <br>
+<div class="container">
+<div id="myborder1"> 
+    <div class="class-pet"> 
+        <label> Pet Name
+        <select name="choose-pet">
+            <option selected>Vally</option>
+            <option>River</option> 
+            <option>lio</option><!-- options change depending on owners pets-->
+        </select>
+        </label>
+    </div>
+
+
+    <div class="class-service">
+        <label>Edit a service
+            <select name="choose-service">
+                <option selected>Vaccinate Pet</option>
+                <option>Pet Grooming</option> 
+                <option>Pet Bathing</option> <!-- options change depending on vets services-->
+            </select>
+            </label>
+     </div>
+
+
+    <div class="class-date"> 
+        <label>Change date
+            <input name="chosen-date" type="date" value="date">
+            </label>
+    </div>
+
+
+    <div class="class-time"> 
+        <label>Change a time
+            <input name="chosen-date" type="time" value="time">
+            </label>
+    </div>
+
+
+    <div class="class-notes">
+        <label>Extra notes</label>
+        <br> <textarea name="notes" rows="4" cols="30" ></textarea>
+    </div>
+    <button class="class-submitbtn" type="submit">Save Changes </button>
+</div> <!-- border end div-->
+</div> <!-- container end div-->
+<footer>
+
+        <div class="footerContent"> 
+        
+        <h2 id="Contact"> Find us at </h2>
+        <p> Saudi Arabia, Riyadh </p>
+        <p> Anas bin malik </p>
+        <p> Building 7  </p>
+        <p> 2nd floor  </p>
+        <p id= "contact us"> To contact us via email <a href="mailto:vet@gmail.com"> click the link </a> and it will direct you. </p> 
+
+        <br>
+        <img src="pics-shahad/sm.png" class="sm">
+
+        <!-- <ul class="social">
+            <li> <a href="#"> <i class="fa fa-facebook"></i> </a> </li>
+            <li> <a href="#"> <i class="fa fa-twitter"></i>   </a> </li>
+            <li> <a href="#"> <i class="fa fa-linkedin-square"></i>    </a>  </li>
+            <li> <a href="#"> <i class="fa fa-instagram"></i> </a>  </li>
+        </ul> -->
+
+
+
+        </div>
+    </footer>  
+
+</body>
+</html>

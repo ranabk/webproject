@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75) , rgba(0,0,0,0.75)), url(pics-rana/clinic.jpeg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.testimonial{
+    padding: 30px 100px;
+}
+
+article h1 em  {
+    color:#009688 ;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+article h2 em{
+    color:#009688 ;
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+article h1:after{
+    height: 5px;
+    width: 225px;
+    background-color: #fff;
+    display: block;
+    margin: auto;  
+}
+blockquote{
+    font-family: sans-serif;
+    font-size: 20x;
+    margin-top: 30px;
+}
+.map{
+    filter: grayscale(0.2) ;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2) ;
+    
+}
+
