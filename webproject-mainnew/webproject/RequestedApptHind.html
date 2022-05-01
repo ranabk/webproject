@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Requested Appointments </title>
+        <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="requestedApptHind.css">
+        <style >
+          /*header style*/
+            .headerbar{
+                      width: 90%  ;
+                      margin: auto;
+                      padding: 36px 0;
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                    }
+                    .logo{
+                      width: 100px;
+                      
+                    }
+                    .headerbar ul li{
+                      list-style: none;
+                      display: inline-block;
+                      margin: 0 15px;
+                      position: relative;
+                      
+                    }
+                    .headerbar ul li a{
+                      text-decoration:  none;
+                      color: grey;  
+                      position:relative;
+                      
+            
+                    }
+                    .headerbar ul li::after {
+                      content: '';
+                      height: 3px;
+                      width: 100% ;
+                      background: #009688;
+                      position: absolute;
+                      left: 0;
+                      bottom: -10px;
+                      transition: 0.5s;
+                      text-decoration: none;
+                    }
+                        .headerbar ul li a:hover{
+                      color: black;
+                      transition: 0.2s;
+                      padding: 0px;
+                 } 
+                 ul li ul.dropdown {
+                    position: relative;
+                    min-width: 120%; 
+                    text-decoration: none;
+                    display: none;
+                    position: absolute;
+                    z-index: 999;
+                    left: 0;
+                    padding: 0px; 
+                }
+                ul li:hover ul.dropdown {
+                    display: block; /* Display the dropdown */
+                    left: 0px;
+                     padding: 0px ;
+                 }
+            
+                      body{font-family: 'Poppins' , sans-serif;}
+            
+                      .headbar ul li.dropdown{
+                        display: block;
+                      }
+          
+                .dropdown{
+                  text-decoration: none;
+                }/*header style*/
+               
+           
+          /*footer style*/
+                 footer {
+                    text-align: center;
+                    font-family: serif;
+                    padding: 3px;
+                    background-color: #D9CBB9;
+                    color: white;
+                    
+                  }
+                  
+          
+          
+                  #Contact{
+                      margin: 17px 20px;
+                      color: #0F4C81 ;
+                  }
+          
+                  .footerContent p{
+                      color: #0F4C81 ;
+                  }
+          
+                  .sm{ width: 170px; } /*footer style*/
+          
+               </style>      
+                   
+           
+</head>
+
+<body> 
+  <div class="headerbar">
+    <img src= "pics-hind/Templogo.jpeg" class="logo">
+    <ul>
+      <li> <a href="managersHomePage.html"> HOME  </a> </li>
+      <li> <a href="Manager'sAboutUsPageRana.html"> ABOUT US </a> </li>
+      <li><a href="#contact us"> CONTACT US </a></li>
+      <li>    <a href="#" ><img src = "pics-hind/menuIcon.jpg" width = "30" height = "10" alt = "menu"> </a>
+        <ul class="dropdown">
+            
+            <li><a href="main2SHAHAD.html">Logout</a></li>
+        </ul>
+    </ul>
+</li>
+</ul>
+  </div>
+  
+   
+    
+    
+
+      <div class="container"> <!--big container containing all elements-->
+    
+	<h1 id="uppcomingAppointments" style="color:#009688 ; "> Requested Appointment List</h1>
+    <hr >
+    <br> <br>
+    
+    <div class="newappt" >
+        <ul>
+          <li ><p class="info2"style="text-align: left;"><strong><span style="color: #009688;"><a href="PetInfo2.html">Pet Name:</a> </span> </strong> River <br> <strong> <span style="color: #009688;">Service:</span> </strong> Vaccinate pet <br> <strong><span style="color: #009688;">Date:</span> </strong> 28/2/2022 <br> <strong><span style="color: #009688;"> Time</span> </strong> 13:00pm </p></li>
+            <li id="checked-btn"> <a href="#"> <img src="pics-hind/checkyes.png" width="30" height="30" 
+                alt="accept"> </a></li>
+                <li id="delete-btn",  onclick="deleted(this)"> <a href="#" ><img src="pics-hind/delete.png" width="30" height="30" 
+                    alt="delete"></li></a>
+        </ul>  
+    </div>
+    <br>
+
+    <div class="newappt">
+        <ul>
+            <li ><p class="info2"style="text-align: left;"><strong><span style="color: #009688;"><a href="PetInfo2.html">Pet Name:</a> </span> </strong> Lilo <br> <strong> <span style="color: #009688;">Service:</span> </strong> Vaccinate pet <br> <strong><span style="color: #009688;">Date:</span> </strong> 12/3/2022 <br> <strong><span style="color: #009688;"> Time</span> </strong> 18:00pm </p></li>
+            <li id="checked-btn"> <a href="#"> <img src="pics-hind/checkyes.png" width="30" height="30" 
+                alt="accept"> </a></li>
+                <li id="delete-btn" > <a href="#" ><img src="pics-hind/delete.png" width="30" height="30" 
+                    alt="delete"></li></a>
+        </ul>  
+    </div>
+
+    <br>
+    <script src="RequestedApptHind.js"> </script>
+  </div>
+ <footer>
+
+        <div class="footerContent"> 
+        
+        <h2 id="Contact"> Find us at </h2>
+        <p> Saudi Arabia, Riyadh </p>
+        <p> Anas bin malik </p>
+        <p> Building 7  </p>
+        <p> 2nd floor  </p>
+        <p id= "contact us"> To contact us via email <a href="mailto:vet@gmail.com"> click the link </a> and it will direct you. </p> 
+
+        <br>
+        <img src="pics-shahad/sm.png" class="sm">
+        </div>
+    </footer>  
+
+
+</body>
+</html>

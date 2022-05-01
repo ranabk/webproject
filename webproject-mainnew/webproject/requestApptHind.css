@@ -1,0 +1,138 @@
+:root{
+    font-size: 16px;
+}
+
+body{
+    margin-left: 1em;
+    overflow: scroll;
+    font-family: 'Poppins' , sans-serif;
+   
+  
+}
+h1{
+    font-size: 3rem;
+    color: #009688;
+    margin-left: 0.5em;
+}
+
+.container{
+    width: 100%;
+	height: 100vh;
+    background-image: url(pics-hind/dogbg.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+   
+    background-size:400px ;
+
+    margin: 1em;
+    position: relative;
+    margin-left: 1 em;
+    
+}
+#myborder1{
+    position: absolute;
+    border-width: 0.55em;
+    border-radius: 2em;
+    border-color: #458b8442;
+    border-style: solid;
+   width: 44em;
+   
+}
+
+.class-pet{
+font-size: 1.5rem;
+margin-left: 1em;
+margin-right: 1em;
+margin-top: 0.75em;
+margin-bottom: 1.5em;
+
+}
+
+
+select {
+    margin-left: 1em;
+    background-color: #e6f3fd;
+    color: #009688;;
+    padding: 12px;
+    width: 180px;
+    border: none;
+    font-size: 1.25rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    
+  }
+ 
+  select option {
+    padding: 30px;
+    
+  }
+
+
+
+
+.class-service{
+    font-size: 1.5rem;
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+    margin-right: 1em;
+    }
+
+.class-date{
+    font-size: 1.5rem;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1.5em;
+}
+
+.class-time{
+    font-size: 1.5rem;
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+    margin-right: 1em;
+}
+
+.class-notes{
+    font-size: 1.5rem;
+    margin-left: 1em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    
+}
+textarea{
+    background-color: #a9dad441;
+    color: #171f1e;
+    border: none;
+    font-size: 1.25rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    outline: none;}
+
+
+button{
+    
+	color: #009688 ;
+    font-size: 1.25rem;
+	background: transparent;
+	border: solid #0096877e;
+	border-radius: 3em;
+	outline: 0;
+	cursor: pointer;
+	
+    
+}
+.class-submitbtn{
+    margin-left: 4em;
+    margin-bottom: 3em;
+
+    padding: 10px 60px;
+    outline: 0;
+}
+button:hover{
+    background-color: #119e926b;
+    transition:ease-in 0.4s;
+}
+
+#cancelbtn:hover{
+    background-color: #df4b4b6e;
+    transition:ease-in 0.4s;
+}
+
