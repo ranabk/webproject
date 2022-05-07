@@ -108,12 +108,13 @@ textarea{
 
 
 button{
+    
 	color: #009688 ;
     font-size: 1.25rem;
 	background: transparent;
 	border: solid #0096877e;
 	border-radius: 3em;
-	outline: solid;
+	outline: 0;
 	cursor: pointer;
 	
     
@@ -123,7 +124,7 @@ button{
     margin-bottom: 3em;
 
     padding: 10px 60px;
-    outline: solid;
+    outline: 0;
 }
 button:hover{
     background-color: #119e926b;

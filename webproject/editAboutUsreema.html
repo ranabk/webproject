@@ -51,7 +51,7 @@
      ul li ul.dropdown {
         position: relative;
         min-width: 200%; /* Set width of the dropdown */
-        background: #black;
+        background: black;
         display: none;
         position: absolute;
         z-index: 999;
@@ -117,27 +117,125 @@ outline: none;
             text-decoration: none;
             margin-bottom: 20px;
 }
+
+button.changes {
+  cursor: pointer;
+  border:none;
+}
+
+button.changes:hover{
+  background-color:#009688;
+  color: #fff;
+}
+
+  .dropdown ul li a{
+            color: white;
+        }
+        .dropdown ul{
+          display: block; /* Display the dropdown */
+  }
+
+  .popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 150ms ease-in-out;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #fff;
+    width: 500px;
+    max-width: 80%;
+  }
+
+  .popup.active{
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .popup img{
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+  }
+
+  .popup-header{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.25rem;
+  }
+
+  .popup-description{
+    text-align: center;
+  }
+
+  .popup button{
+    display: block;
+    width:100px;
+    height: 60px;
+    margin: 20px auto;
+  }
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 150ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
+
+}
+
 </style>
 </head>
 <body>
 	<div class="headerbar">
         <img src= "pic-reema/Templogo.jpeg" class="logo">
         <ul>
-          <li> <a href="managersHomePage.html"> HOME  </a> </li>
-          <li> <a href="Manager'sAboutUsPageRana.html"> ABOUT US </a> </li>
-          <li><a href="#contact us"> CONTACT US </a></li>
-          <li><a href ="Services.html"> Services </a></li>
+          <li> <a href="AvailableApptRana.html"> Appointments  </a> </li>
+           <li><a href ="Services.html"> Services </a></li>
+          <li> <a href="Manager'sAboutUsPageRana.html"> About Us </a> </li>
+          <li><a href="#contact us"> Contact Us </a></li>
+         
 
 
           <li>    <a href="#" ><img src = "pic-reema/menuIcon.png" width = "30" height = "10" alt = "menu"> </a>
             <ul class="dropdown">
                 <li><a href="main2SHAHAD.html">Logout</a></li>
-                <li><a href = "editProfilereema.html">Edit Profile</a></li>
             </ul>
         </ul>
     </li>
 </ul>
       </div>
+   <!--     <div class="headerbar">
+        <img src= "pics-rana/Templogo.jpeg" class="logo">
+        <ul>
+          <li> <a href="#"> Appointments</a> 
+                    <div class="dropdown">
+                        <ul > 
+                            <li><a href="AvailableApptRana.html">My Appointments </a> </li>
+                            <li><a href="RequestedApptHind.html"> Request a new Appointment</a> </li>
+                        </ul>
+                    </div>
+          <li><a href="Services.html"> Services </a></li>
+          <li> <a href="Manager'sAboutUsPageRana.html"> About Us </a> </li>
+          <li><a href="#contact us"> Contact Us </a></li>
+                <li><a href="#" ><img src = "pics-rana/menu.jpeg" width = "30" height = "10" alt = "menu"></a>
+                    <div class="dropdown">
+                        <ul >
+                            <li><a href="main2SHAHAD.html">Logout</a></li>
+                         </ul>
+                    </div>
+                </li>
+      </div> -->
 <h1> Edit About Us </h1>
 <hr> </hr>
 <br><br>
@@ -147,15 +245,30 @@ outline: none;
 <form class="textarea">
   <label>About Us:</label><br>
   <textarea id="textarea" rows="10" cols="50">
-  	Our clinic was founded in January 2021 in the Kingdom of Saudi Arabia, Since it was established, our staff have been providing unique veterinary medical services and compassionate animal care in Riyadh city.<br> Here at the Clinic, we treat every client as though they were family and each pet as if they were our own. <br> We try our best to provide complete high quality veterinary care with emphasis on exceptional client service and patient care. We belive that you and your pet should feel as comfortable as possible, that's why we offer a free in-home reservation service and manage appointmnets even before your first service begins.
-  </textarea><br>
+  	Our clinic was founded in January 2021 in the Kingdom of Saudi Arabia, Since it was established, our staff have been providing unique veterinary medical services and compassionate animal care in Riyadh city.<br> Here at the Clinic, we treat every client as though they were family and each pet as if they were our own. <br> We try our best to provide complete high quality veterinary care with emphasis on exceptional client service and patient care. We belive that you and your pet should feel as comfortable as possible, that's why we offer a free in-home reservation service and manage appointmnets even before your first service begins.</textarea><br>
+  <label for="changeImage">Change Image:</label><br>
+  <input name="changeImage" type="file"> 
    </form>
   <br><br>
   <div>
-<a class="changes" href="managersHomePage.html"> <span > Save Changes </span></a>	  <a class="changes" href="editAboutUsreema.html"> <span> Reset 
+    <button class="changes" onclick="openPopUp()">Save Changes</button>
+    <button class="changes" onclick="reset()">Reset</button>
  </span> </a>
 	</div>
 </div>
 </div>
+
+<div class="popup" id="popup">
+  <div class="popup-body">
+    <div class="tick"><img src="pic-reema/tick.jpg" alt="tick"></div>
+    <div class="popup-header">Changes Saved!</div>
+    <p class="popup-description">The changes have been saved and "About Us" is updated.</p>
+    <br>
+    <button class="changes" onclick="closePopUp()">Close</button>
+  </div>
+</div>
+
+<div id="overlay"></div>
+<script src="editAboutUsReema.js"></script>
 </body>
 </html>
