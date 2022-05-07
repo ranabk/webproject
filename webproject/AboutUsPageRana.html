@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>About Us</title>
+     <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+       
+        <link rel="stylesheet" type="text/css" href="AboutUsStyleRana.css">
+        <style>
+             body{
+           font-family: 'Poppins' , sans-serif;
+           overflow: scroll;
+       }
+    
+        .headerbar{
+          width: 100% ;
+          padding:0 5%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .logo{
+          width: 100px;
+          
+        }
+        .headerbar ul{
+            list-style: none;
+            display: flex;
+
+        }
+        .headerbar ul li{
+            margin: 0 15px;
+            border-bottom: 2px solid #009688 ;
+            position: relative;
+
+        }
+        .headerbar ul li a{
+          text-decoration:  none;
+          color: grey;  
+          position:relative;
+          transition: all 0.3s;
+        }
+
+        .headerbar ul li a:hover{
+          color: black;
+          transition: 0.2s;
+          padding: 0px;
+        } 
+        .dropdown{
+            display: none;
+        }
+        .headerbar ul li:hover .dropdown {
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 100%;
+          background-color:#009688;
+          font-size: 11px;
+
+        }
+        .dropdown ul li a{
+            color: white;
+        }
+        .dropdown ul{
+          display: block; /* Display the dropdown */
+         
+        }
+
+
+        footer {
+          text-align: center;
+          font-family: serif;
+          padding: 3px;
+          background-color: #D9CBB9;
+          color: white;
+        }
+
+        h2{
+            margin: 17px 20px;
+            color: #0F4C81 ;
+        }
+
+        .footerContent p{
+            color: #0F4C81 ;
+        }
+
+        .sm{ width: 170px; }
+
+        </style>
+    </head>
+    <body>
+        <div class="headerbar">
+            <img src= "pics-rana/Templogo.jpeg" class="logo">
+            <ul>
+                <li> <a href="PetList.html">  My Pets </a></li>
+                <li> <a href="#"> Appointments</a> 
+                    <div class="dropdown">
+                        <ul > 
+                            <li><a href="petOwnerApptRana.html">My Appointments </a> </li>
+                            <li><a href="RequestApptHind.html"> Request a new Appointment</a> </li>
+                        </ul>
+                    </div>
+                    
+                </li>
+                <li><a href="#contact us"> Contact Us </a></li>
+                <li><a href="#" ><img src = "pics-rana/menu.jpeg" width = "30" height = "10" alt = "menu"></a>
+                    <div class="dropdown">
+                        <ul >
+                            <li><a href="editProfilereema.html">Manage Profile</a></li>
+                            <li><a href="main2SHAHAD.html">Logout</a></li>
+                         </ul>
+                    </div>
+                </li>
+           </ul>
+          </div>
+          <div class="container">
+            <div class="row">
+                <div class="heading-section">
+                    <h1 style=" color: #009688;">About Us</h1>
+                    <p>Our clinic was founded in January 2021 in Saudi Arabia.
+                        Since it was established, our staff have been providing unique veterinary
+                        medical services and compassionate animal care in Riyadh city.<br><br>
+                        Here at the Clinic, we treat every client as they were family and each pet as
+                        if they were our own. 
+                        We try our best to provide complete high quality veterinary
+                        care with emphasis on exceptional client service and patient care.
+                        We believe that you and your pet should feel as comfortable as possible,
+                        that's why we offer an online reservation service and manage appointmnets 
+                        before your first service begins.</p>
+                    </div>
+                    <br>
+                    <h1 style=" color: #009688;">What We Do</h1>
+                        <div class="content-section">
+                        <div class="card">
+                            <img src="pics-rana/petgrooming.jpeg">
+                            <h4 style=" color: #009688">Pet Grooming</h4>
+                            <p>Does your little love need a haircut or nail trim? We offer a full-service pet grooming that puts your pet's health first. Book a grooming visit with us now 
+                        </div>
+                        <div class="card">
+                            <img src="pics-rana/petbathing.jpeg" >
+                            <h4 style=" color: #009688">Pet Bathing</h4>
+                            <p> Did Spot get dirty after a trip to the park? Our pet bath will make your furry friend shiny and clean again. Call us today to schedule a professional bath</p>
+                        </div>
+                        <div class="card">
+                            <img src="pics-rana/petvacinating.jpg" >
+                            <h4 style=" color: #009688">Pet Vacinating</h4>
+                            <p> Do you want to protect your pet against different disseases? We offer a whole vacination schedule to make sure your pet ia as healthy as ever. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                      
+                     
+    <footer>
+
+        <div class="footerContent"> 
+        
+        <h2 id="Contact"> Find us at </h2>
+        <p> Saudi Arabia, Riyadh </p>
+        <p> Anas bin malik </p>
+        <p> Building 7  </p>
+        <p> 2nd floor  </p>
+        <p id= "contact us"> To contact us via email <a href="mailto:vet@gmail.com"> click the link </a> and it will direct you. </p> 
+        <br>
+        <img src="pics-shahad/sm.png" class="sm">
+
+        <!-- <ul class="social">
+            <li> <a href="#"> <i class="fa fa-facebook"></i> </a> </li>
+            <li> <a href="#"> <i class="fa fa-twitter"></i>   </a> </li>
+            <li> <a href="#"> <i class="fa fa-linkedin-square"></i>    </a>  </li>
+            <li> <a href="#"> <i class="fa fa-instagram"></i> </a>  </li>
+        </ul> -->
+
+
+
+        </div>
+    </footer>  
+    </body>
+</html>
