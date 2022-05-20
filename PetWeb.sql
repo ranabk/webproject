@@ -45,28 +45,33 @@ CREATE TABLE `Appointments` (
 -- Table structure for table `Manager`
 --
 
-CREATE TABLE `Manager` (
-  `ID` int(10) UNSIGNED NOT NULL,
-  `Name` varchar(100) NOT NULL,
-  `Email` varchar(100) NOT NULL,
-  `Password` varchar(100) NOT NULL
+CREATE TABLE `manager` (
+  `Email` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `ID` int(10) DEFAULT NULL,
+  `Created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- --------------------------------------------------------
+-- Dumping data for table `manager`
+--
 
+INSERT INTO `manager` (`Email`, `password`, `ID`, `Created_at`) VALUES
+('admin@pet.care', 'admin123', 1, '2022-05-10 22:38:05');
+-- --------------------------------------------------------
 --
 -- Table structure for table `PetOwner`
 --
 
-CREATE TABLE `PetOwner` (
-  `ID` int(10) UNSIGNED NOT NULL,
-  `FirstName` varchar(100) NOT NULL,
-  `LastName` varchar(100) NOT NULL,
-  `Gender` varchar(100) NOT NULL,
-  `Phone_no` varchar(100) NOT NULL,
-  `Email` varchar(100) NOT NULL,
-  `Password` varchar(100) NOT NULL,
-  `Pic` blob NOT NULL
+CREATE TABLE `petowner` (
+  `ID` int(10) NOT NULL,
+  `Email` varchar(255) NOT NULL,
+  `FirstName` varchar(255) NOT NULL,
+  `LastName` varchar(255) NOT NULL,
+  `Phone` varchar(255) NOT NULL,
+  `Gender` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `Picture` varchar(255) DEFAULT NULL,
+  `Created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -148,13 +153,13 @@ ALTER TABLE `Appointments`
 --
 -- AUTO_INCREMENT for table `Manager`
 --
-ALTER TABLE `Manager`
+ALTER TABLE `manager`
   MODIFY `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `PetOwner`
 --
-ALTER TABLE `PetOwner`
+ALTER TABLE `petowner`
   MODIFY `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
