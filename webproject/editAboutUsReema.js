@@ -11,6 +11,7 @@ const overlay = document.getElementById("overlay");
 function openPopUp() {
 	popup.classList.add("active");
 	overlay.classList.add("active");
+	alert("changes has been saved");
 }
 
 function closePopUp() {
