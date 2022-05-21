@@ -1,0 +1,245 @@
+:root{
+    font-size: 16px;
+}
+
+body{
+    overflow: scroll;
+    font-family: 'Poppins' , sans-serif;
+}
+.styled-table {
+    border-collapse: collapse;
+    border-radius: 25px;
+    margin: 25px 0;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    min-width: 200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: 1.5em;
+  }
+  .styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+  }
+  .styled-table th,
+  .styled-table td {
+      padding: 12px 15px;
+      text-align: center;
+     
+  }
+  
+  .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #0096874b;
+  }
+  
+  .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+.headerbar{
+    width: 90% ;
+    padding:0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo{
+    width: 100px;
+    
+  }
+  .headerbar ul{
+      list-style: none;
+      display: flex;
+
+  }
+  .headerbar ul li{
+      margin: 0 15px;
+      
+      position: relative;
+
+  }
+  .headerbar ul li a{
+    text-decoration:  none;
+    color: grey;  
+    position:relative;
+    transition: all 0.3s;
+  }
+
+  .headerbar ul li a:hover{
+    color: black;
+    transition: 0.2s;
+    padding: 0px;
+  } 
+  .dropdown{
+      display: none;
+  }
+  .headerbar ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:#009688;
+    font-size: 11px;
+
+  }
+  .dropdown ul li a{
+      color: white;
+  }
+  .dropdown ul{
+    display: block; /* Display the dropdown */
+   
+  }
+
+h1{
+    font-size: 3rem;
+    color: #009688;
+    margin-left: 0.5em;
+}
+
+.container{
+    width: 100%;
+	height: 100vh;
+    background-image: url(pics-hind/dogbg.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+   
+    background-size:400px ;
+
+    margin: 1em;
+    position: relative;
+    margin-left: 1 em;
+    
+}
+#myborder1{
+    position: absolute;
+    border-width: 0.55em;
+    border-radius: 2em;
+    border-color: #458b8442;
+    border-style: solid;
+   width: 44em;
+   
+}
+.serv{
+  margin-left: 1.5em;
+}
+
+.class-pet{
+font-size: 1rem;
+margin-left: 1em;
+margin-right: 1em;
+margin-top: 0.75em;
+margin-bottom: 1.5em;
+
+}
+
+
+select {
+    margin-left: 1em;
+    background-color: #e6f3fd;
+    color: #009688;;
+    padding: 12px;
+    width: 180px;
+    border: none;
+    font-size: 1.25rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    
+  }
+ 
+  select option {
+    padding: 30px;
+    
+  }
+
+
+
+
+#class-service{
+    font-size: 1.5rem;
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+    margin-right: 1em;
+    }
+
+.class-date{
+    font-size: 1rem;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1.5em;
+}
+
+.class-time{
+    font-size: 1.5rem;
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+    margin-right: 1em;
+}
+
+.class-notes{
+    font-size: 1.5rem;
+    margin-left: 1em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    
+}
+textarea{
+    background-color: #a9dad441;
+    color: #171f1e;
+    border: none;
+    font-size: 1.25rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    outline: none;}
+
+
+#addbtn{
+    
+	color: #009688 ;
+    font-size: 1.25rem;
+	background: transparent;
+	border: solid #0096877e;
+	border-radius: 3em;
+	outline: 0;
+	cursor: pointer;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+	
+}
+#cancelbtn{
+    
+	color: #009688 ;
+    font-size: 1.25rem;
+	background: transparent;
+	border: solid #0096877e;
+	border-radius: 3em;
+	outline: 0;
+	cursor: pointer;
+    width: 100px;
+    text-align: center;
+	
+}
+.class-submitbtn{
+    
+    margin-left: 2em;
+    padding: 10px 10px;
+    outline: 0;
+}
+#addbtn:hover{
+    background-color: #119e926b;
+    transition:ease-in 0.4s;
+}
+
+#cancelbtn:hover{
+    background-color: #df4b4b6e;
+    transition:ease-in 0.4s;
+}
+
+
+.error{
+    color: red;
+}
+
+  
