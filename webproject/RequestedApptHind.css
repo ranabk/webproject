@@ -5,6 +5,60 @@ body{
     font-family: 'Poppins' , sans-serif;
     margin: 2em;
 }
+.headerbar{
+    width: 90% ;
+    padding:0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo{
+    width: 100px;
+    
+  }
+  .headerbar ul{
+      list-style: none;
+      display: flex;
+
+  }
+  .headerbar ul li{
+      margin: 0 15px;
+   
+      position: relative;
+
+  }
+  .headerbar ul li a{
+    text-decoration:  none;
+    color: grey;  
+    position:relative;
+    transition: all 0.3s;
+  }
+
+  .headerbar ul li a:hover{
+    color: black;
+    transition: 0.2s;
+    padding: 0px;
+  } 
+  .dropdown{
+      display: none;
+  }
+  .headerbar ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:#009688;
+    font-size: 11px;
+
+  }
+  .dropdown ul li a{
+      color: white;
+  }
+  .dropdown ul{
+    display: block; /* Display the dropdown */
+   
+  }
 .menu-rana{
     width: 90% ;
     margin:auto;
@@ -108,4 +162,36 @@ body{
 
 a:link, a:active, a:visited{
 color: #009688;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  border-radius: 25px;
+  margin: 25px 0;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  min-width: 1100px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
 }

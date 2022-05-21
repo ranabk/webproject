@@ -7,6 +7,60 @@ body{
     font-family: 'Poppins' , sans-serif;
 
 }
+.headerbar{
+    width: 90% ;
+    padding:0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo{
+    width: 100px;
+    
+  }
+  .headerbar ul{
+      list-style: none;
+      display: flex;
+
+  }
+  .headerbar ul li{
+      margin: 0 15px;
+      
+      position: relative;
+
+  }
+  .headerbar ul li a{
+    text-decoration:  none;
+    color: grey;  
+    position:relative;
+    transition: all 0.3s;
+  }
+
+  .headerbar ul li a:hover{
+    color: black;
+    transition: 0.2s;
+    padding: 0px;
+  } 
+  .dropdown{
+      display: none;
+  }
+  .headerbar ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:#009688;
+    font-size: 11px;
+
+  }
+  .dropdown ul li a{
+      color: white;
+  }
+  .dropdown ul{
+    display: block; /* Display the dropdown */
+   
+  }
+  
 h1{
     font-size: 3rem;
     color: #009688;
@@ -104,25 +158,40 @@ textarea{
     outline: none;
 }
 
-button{
+#savebtn{
+    
 	color: #009688 ;
     font-size: 1.25rem;
 	background: transparent;
 	border: solid #0096877e;
 	border-radius: 3em;
-	outline: solid;
+	outline: 0;
 	cursor: pointer;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 30px;
 	
+}
+#cancelbtn{
     
+	color: #009688 ;
+    font-size: 1.25rem;
+	background: transparent;
+	border: solid #0096877e;
+	border-radius: 3em;
+	outline: 0;
+	cursor: pointer;
+    width: 100px;
+    text-align: center;
+	
 }
 .class-submitbtn{
-    margin-left: 4em;
-    margin-bottom: 3em;
-
-    padding: 10px 60px;
-    outline: solid;
+   
+    margin-left: 2em;
+    padding: 10px 10px;
+    outline: 0;
 }
-button:hover{
+#savebtn:hover{
     background-color: #119e926b;
     transition:ease-in 0.4s;
 }
@@ -131,4 +200,3 @@ button:hover{
     background-color: #df4b4b6e;
     transition:ease-in 0.4s;
 }
-

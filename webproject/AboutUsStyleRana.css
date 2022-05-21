@@ -12,7 +12,6 @@
 .container{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75) , rgba(0, 0, 0, 0.75)), url(pics-rana/petclinic1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,27 +44,21 @@
 
 }
 .content-section .card {
+    display:flex;
     flex: 1;
     margin: 40px 20px;
+    position: relative;
 }
-.content-section .card img{
-    width: 100%;
-    height: auto;
-}
-.content-section .card h4{
+
+.servicename{
     margin-top: 20px;
 }
 
-.content-section .card p{
+.disccription{
     font-size: 15px;
     margin-top: 10px;
     color : white;
     line-height: 1.5;
 }
 
-.map{
-    filter: grayscale(0.2) ;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.2) ;
-    
-}
 
